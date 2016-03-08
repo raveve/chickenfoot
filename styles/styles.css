@@ -11,8 +11,7 @@ body {
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 0;
-  margin-left: 6%; }
+  z-index: 0; }
   .container:before {
     content: '';
     position: fixed;
@@ -30,10 +29,10 @@ body {
     filter: blur(5px); }
 
 header {
-  width: 50%;
-  margin-left: 25%; }
+  width: 25%;
+  margin-left: 2%; }
   header h1 {
-    font-size: 100px;
+    font-size: 80px;
     color: #FF7F50;
     mix-blend-mode: screen;
     letter-spacing: -5px;
@@ -41,14 +40,13 @@ header {
 
 main {
   width: 70%;
-  margin-left: 15%; }
+  margin-left: 30%;
+  margin-top: -35px; }
   main section {
     display: inline-block;
     width: 15%;
     margin-right: 10%;
     margin-top: 25px; }
-    main section h3 {
-      text-align: center; }
     main section label {
       background: #FF7F50;
       color: #444444;
@@ -67,9 +65,22 @@ main {
       color: #444444;
       font-size: 15px;
       padding: 5px;
-      text-align: right; }
+      text-align: right;
+      margin-bottom: -5px; }
       main section input:focus {
         border-color: #FF7F50; }
+    main section button {
+      text-transform: uppercase;
+      padding: 10px;
+      color: #444444;
+      font-size: 15px;
+      background: #FF7F50;
+      border: 2px solid white;
+      border-radius: 5px;
+      margin-top: 15px; }
+      main section button:hover {
+        cursor: pointer;
+        mix-blend-mode: screen; }
   main #player1 {
     margin-left: 5%; }
   main #player4 {
