@@ -1,8 +1,8 @@
 jQuery(document).ready(function ($) {
 
-    //This is the start, all inputs add together as long as there is a number in each one (at least a zero).
     //MUST - Add in localStorage
-    //If input is blank, make the value 0. Something similar to this(maybe on click before doing the .each?: $('#player2 #p2dbl1').val('0');
+    //If input is blank, make the value 0, is there a way to do this without putting the zero inside the input on the DOM?
+    //Remove previous total score and replace it with new total score
 
     $('#p1total').on('click', function(event) {
         event.preventDefault();
@@ -84,6 +84,90 @@ jQuery(document).ready(function ($) {
 
             $('<h4> ' + totalPoints + '</h4>').appendTo('#p4score');
             console.log('Player FOUR has ' + totalPoints + ' points');
+        });
+
+    });
+
+    $('#p5total').on('click', function(event) {
+        event.preventDefault();
+
+        $('#player5 input').each(function() {
+            if ($(this).val() == "") {
+                $(this).val(0);
+            } else {}
+        });
+
+        $('#player5').each(function() {
+            var totalPoints = 0;
+            $(this).find('input').each(function(i,n) {
+                totalPoints += parseInt($(n).val(),10);
+            });
+
+            $('<h4> ' + totalPoints + '</h4>').appendTo('#p5score');
+            console.log('Player FIVE has ' + totalPoints + ' points');
+        });
+
+    });
+
+    $('#p6total').on('click', function(event) {
+        event.preventDefault();
+
+        $('#player6 input').each(function() {
+            if ($(this).val() == "") {
+                $(this).val(0);
+            } else {}
+        });
+
+        $('#player6').each(function() {
+            var totalPoints = 0;
+            $(this).find('input').each(function(i,n) {
+                totalPoints += parseInt($(n).val(),10);
+            });
+
+            $('<h4> ' + totalPoints + '</h4>').appendTo('#p6score');
+            console.log('Player SIX has ' + totalPoints + ' points');
+        });
+
+    });
+
+    $('#p7total').on('click', function(event) {
+        event.preventDefault();
+
+        $('#player7 input').each(function() {
+            if ($(this).val() == "") {
+                $(this).val(0);
+            } else {}
+        });
+
+        $('#player7').each(function() {
+            var totalPoints = 0;
+            $(this).find('input').each(function(i,n) {
+                totalPoints += parseInt($(n).val(),10);
+            });
+
+            $('<h4> ' + totalPoints + '</h4>').appendTo('#p7score');
+            console.log('Player SEVEN has ' + totalPoints + ' points');
+        });
+
+    });
+
+    $('#p8total').on('click', function(event) {
+        event.preventDefault();
+
+        $('#player8 input').each(function() {
+            if ($(this).val() == "") {
+                $(this).val(0);
+            } else {}
+        });
+
+        $('#player8').each(function() {
+            var totalPoints = 0;
+            $(this).find('input').each(function(i,n) {
+                totalPoints += parseInt($(n).val(),10);
+            });
+
+            $('<h4> ' + totalPoints + '</h4>').appendTo('#p8score');
+            console.log('Player EIGHT has ' + totalPoints + ' points');
         });
 
     });
