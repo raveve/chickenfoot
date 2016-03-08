@@ -42,4 +42,42 @@ jQuery(document).ready(function ($) {
 
     });
 
+    $('#p3total').on('click', function(event) {
+        event.preventDefault();
+
+        $('#player3 input').each(function() {
+            if ($(this).val() == "") {
+                $(this).val(0);
+            } else {}
+        });
+
+        $('#player3').each(function() {
+            var totalPoints = 0;
+            $(this).find('input').each(function(i,n) {
+                totalPoints += parseInt($(n).val(),10);
+            });
+            console.log('Player THREE has ' + totalPoints + ' points');
+        });
+
+    });
+
+    $('#p4total').on('click', function(event) {
+        event.preventDefault();
+
+        $('#player4 input').each(function() {
+            if ($(this).val() == "") {
+                $(this).val(0);
+            } else {}
+        });
+
+        $('#player4').each(function() {
+            var totalPoints = 0;
+            $(this).find('input').each(function(i,n) {
+                totalPoints += parseInt($(n).val(),10);
+            });
+            console.log('Player FOUR has ' + totalPoints + ' points');
+        });
+
+    });
+
 });
