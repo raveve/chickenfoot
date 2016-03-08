@@ -19,7 +19,8 @@ jQuery(document).ready(function ($) {
                 totalPoints += parseInt($(n).val(),10);
             });
 
-            $('<h4> ' + totalPoints + '</h4>').appendTo('#p1score');
+            $('#p1stotal').remove();
+            $('<h4 id="p1stotal"> ' + totalPoints + '</h4>').appendTo('#p1score');
             console.log('Player ONE has ' + totalPoints + ' points');
         });
 
@@ -40,7 +41,8 @@ jQuery(document).ready(function ($) {
                 totalPoints += parseInt($(n).val(),10);
             });
 
-            $('<h4> ' + totalPoints + '</h4>').appendTo('#p2score');
+            $('#p2stotal').remove();
+            $('<h4 id="p2stotal"> ' + totalPoints + '</h4>').appendTo('#p2score');
             console.log('Player TWO has ' + totalPoints + ' points');
         });
 
@@ -61,7 +63,8 @@ jQuery(document).ready(function ($) {
                 totalPoints += parseInt($(n).val(),10);
             });
 
-            $('<h4> ' + totalPoints + '</h4>').appendTo('#p3score');
+            $('#p3stotal').remove();
+            $('<h4 id="p3stotal"> ' + totalPoints + '</h4>').appendTo('#p3score');
             console.log('Player THREE has ' + totalPoints + ' points');
         });
 
@@ -82,7 +85,8 @@ jQuery(document).ready(function ($) {
                 totalPoints += parseInt($(n).val(),10);
             });
 
-            $('<h4> ' + totalPoints + '</h4>').appendTo('#p4score');
+            $('#p4stotal').remove();
+            $('<h4 id="p4stotal"> ' + totalPoints + '</h4>').appendTo('#p4score');
             console.log('Player FOUR has ' + totalPoints + ' points');
         });
 
@@ -103,7 +107,8 @@ jQuery(document).ready(function ($) {
                 totalPoints += parseInt($(n).val(),10);
             });
 
-            $('<h4> ' + totalPoints + '</h4>').appendTo('#p5score');
+            $('#p5stotal').remove();
+            $('<h4 id="p5stotal"> ' + totalPoints + '</h4>').appendTo('#p5score');
             console.log('Player FIVE has ' + totalPoints + ' points');
         });
 
@@ -124,7 +129,8 @@ jQuery(document).ready(function ($) {
                 totalPoints += parseInt($(n).val(),10);
             });
 
-            $('<h4> ' + totalPoints + '</h4>').appendTo('#p6score');
+            $('#p6stotal').remove();
+            $('<h4 id="p6stotal"> ' + totalPoints + '</h4>').appendTo('#p6score');
             console.log('Player SIX has ' + totalPoints + ' points');
         });
 
@@ -145,7 +151,8 @@ jQuery(document).ready(function ($) {
                 totalPoints += parseInt($(n).val(),10);
             });
 
-            $('<h4> ' + totalPoints + '</h4>').appendTo('#p7score');
+            $('#p7stotal').remove();
+            $('<h4 id="p7stotal"> ' + totalPoints + '</h4>').appendTo('#p7score');
             console.log('Player SEVEN has ' + totalPoints + ' points');
         });
 
@@ -166,7 +173,8 @@ jQuery(document).ready(function ($) {
                 totalPoints += parseInt($(n).val(),10);
             });
 
-            $('<h4> ' + totalPoints + '</h4>').appendTo('#p8score');
+            $('#p8stotal').remove();
+            $('<h4 id="p8stotal"> ' + totalPoints + '</h4>').appendTo('#p8score');
             console.log('Player EIGHT has ' + totalPoints + ' points');
         });
 
