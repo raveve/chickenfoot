@@ -18,6 +18,8 @@ jQuery(document).ready(function ($) {
             $(this).find('input').each(function(i,n) {
                 totalPoints += parseInt($(n).val(),10);
             });
+
+            $('<h4> ' + totalPoints + '</h4>').appendTo('#p1score');
             console.log('Player ONE has ' + totalPoints + ' points');
         });
 
@@ -37,6 +39,8 @@ jQuery(document).ready(function ($) {
             $(this).find('input').each(function(i,n) {
                 totalPoints += parseInt($(n).val(),10);
             });
+
+            $('<h4> ' + totalPoints + '</h4>').appendTo('#p2score');
             console.log('Player TWO has ' + totalPoints + ' points');
         });
 
@@ -56,6 +60,8 @@ jQuery(document).ready(function ($) {
             $(this).find('input').each(function(i,n) {
                 totalPoints += parseInt($(n).val(),10);
             });
+
+            $('<h4> ' + totalPoints + '</h4>').appendTo('#p3score');
             console.log('Player THREE has ' + totalPoints + ' points');
         });
 
@@ -75,6 +81,8 @@ jQuery(document).ready(function ($) {
             $(this).find('input').each(function(i,n) {
                 totalPoints += parseInt($(n).val(),10);
             });
+
+            $('<h4> ' + totalPoints + '</h4>').appendTo('#p4score');
             console.log('Player FOUR has ' + totalPoints + ' points');
         });
 
