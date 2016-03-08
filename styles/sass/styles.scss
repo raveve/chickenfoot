@@ -39,7 +39,7 @@ header {
   margin-left: 25%;
   h1 {
     font-size: 100px;
-    color: coral;
+    color: #FF7F50;
     mix-blend-mode: screen;
     letter-spacing: -5px;
     line-height: 40px;
@@ -48,16 +48,38 @@ header {
 main {
   width: 70%;
   margin-left: 15%;
-  #player1, 
-  #player2,
-  #player3, 
-  #player4 {
+  section {
     display: inline-block;
     width: 15%;
     margin-right: 10%;
     margin-top: 25px;
     h3 {
       text-align: center;
+    }
+    label {
+      background: #FF7F50;
+      color: #444444;
+      font-size: 15px;
+      // padding: 1px 6px;
+      padding: 5px;
+      border-radius: 5px;
+      z-index: 2;
+      text-transform: uppercase;
+      position: relative;
+      top: 24px;
+      left: 2px;
+    }
+    input {
+      border-radius: 5px;
+      background: #ADD8E6;
+      border: 2px solid white;
+      color: #444444;
+      font-size: 15px;
+      padding: 5px;
+      text-align: right;
+      &:focus {
+        border-color: #FF7F50;
+      }
     }
   }
   #player1 {
@@ -70,5 +92,5 @@ main {
 
 header, footer {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
