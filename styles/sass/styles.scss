@@ -6,6 +6,20 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
+    button {
+      text-transform: uppercase;
+      padding: 10px;
+      color: #444444;
+      font-size: 15px;
+      background: #FF7F50;
+      border: 2px solid white;
+      border-radius: 5px;
+      margin-top: 15px;
+      &:hover {
+        cursor: pointer;
+        mix-blend-mode: screen;
+      }
+    }
 }
 
 .container {
@@ -50,6 +64,9 @@ aside {
   margin-left: 2%;
   display: inline-block;
   margin-bottom: 200px;
+  #players1-4 {
+    display: none;
+  }
   h3 {
     padding: 10px;
   }
@@ -93,25 +110,13 @@ main {
         border-color: #FF7F50;
       }
     }
-    button {
-      text-transform: uppercase;
-      padding: 10px;
-      color: #444444;
-      font-size: 15px;
-      background: #FF7F50;
-      border: 2px solid white;
-      border-radius: 5px;
-      margin-top: 15px;
-      &:hover {
-        cursor: pointer;
-        mix-blend-mode: screen;
-      }
-    }
   }
-  #player1 {
+  #player1, 
+  #player5 {
     margin-left: 5%;
   }
-  #player4 {
+  #player4, 
+  #player8 {
     margin-right: 0;
   }
 
