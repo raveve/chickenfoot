@@ -4,6 +4,19 @@ jQuery(document).ready(function ($) {
     //If input is blank, make the value 0, is there a way to do this without putting the zero inside the input on the DOM?
     //Remove previous total score and replace it with new total score
 
+    $('#players5-8').on('click', function(event) {
+        event.preventDefault();
+        $('#player1, #player2, #player3, #player4, #players5-8').hide();
+        $('#player5, #player6, #player7, #player8, #players1-4').css("display", "inline-block");
+    });
+
+    $('#players1-4').on('click', function(event) {
+        event.preventDefault();
+        $('#player5, #player6, #player7, #player8, #players1-4').hide();
+        $('#player1, #player2, #player3, #player4, #players5-8').show();
+
+    });
+
     $('#p1total').on('click', function(event) {
         event.preventDefault();
 
