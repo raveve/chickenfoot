@@ -2,7 +2,6 @@ jQuery(document).ready(function ($) {
 
     //MUST - Add in localStorage
     //If input is blank, make the value 0, is there a way to do this without putting the zero inside the input on the DOM?
-    //Remove previous total score and replace it with new total score
 
     $('#players5-8').on('click', function(event) {
         event.preventDefault();
