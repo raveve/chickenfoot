@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
 
-    //MUST - Add in localStorage
+    //localStorage is adding in the player's total score with the ID from the total column. Need to also store each input so they are returned on page load also.
+    //Will need to add a clear all button for clearing scores before a new game.
     //If input is blank, make the value 0, is there a way to do this without putting the zero inside the input on the DOM?
 
     $('#players5-8').on('click', function(event) {
@@ -33,6 +34,8 @@ jQuery(document).ready(function ($) {
 
             $('#p1stotal').remove();
             $('<h4 id="p1stotal"> ' + totalPoints + '</h4>').appendTo('#p1score');
+
+            localStorage.setItem('p1score', totalPoints);
         });
 
     });
@@ -54,6 +57,8 @@ jQuery(document).ready(function ($) {
 
             $('#p2stotal').remove();
             $('<h4 id="p2stotal"> ' + totalPoints + '</h4>').appendTo('#p2score');
+
+            localStorage.setItem('p2score', totalPoints);
         });
 
     });
@@ -75,6 +80,9 @@ jQuery(document).ready(function ($) {
 
             $('#p3stotal').remove();
             $('<h4 id="p3stotal"> ' + totalPoints + '</h4>').appendTo('#p3score');
+
+            localStorage.setItem('p3score', totalPoints);
+
         });
 
     });
@@ -96,6 +104,8 @@ jQuery(document).ready(function ($) {
 
             $('#p4stotal').remove();
             $('<h4 id="p4stotal"> ' + totalPoints + '</h4>').appendTo('#p4score');
+
+            localStorage.setItem('p4score', totalPoints);
         });
 
     });
@@ -117,6 +127,8 @@ jQuery(document).ready(function ($) {
 
             $('#p5stotal').remove();
             $('<h4 id="p5stotal"> ' + totalPoints + '</h4>').appendTo('#p5score');
+
+            localStorage.setItem('p5score', totalPoints);
         });
 
     });
@@ -138,6 +150,8 @@ jQuery(document).ready(function ($) {
 
             $('#p6stotal').remove();
             $('<h4 id="p6stotal"> ' + totalPoints + '</h4>').appendTo('#p6score');
+
+            localStorage.setItem('p6score', totalPoints);
         });
 
     });
@@ -159,6 +173,8 @@ jQuery(document).ready(function ($) {
 
             $('#p7stotal').remove();
             $('<h4 id="p7stotal"> ' + totalPoints + '</h4>').appendTo('#p7score');
+
+            localStorage.setItem('p7score', totalPoints);
         });
 
     });
@@ -180,6 +196,8 @@ jQuery(document).ready(function ($) {
 
             $('#p8stotal').remove();
             $('<h4 id="p8stotal"> ' + totalPoints + '</h4>').appendTo('#p8score');
+
+            localStorage.setItem('p8score', totalPoints);
         });
 
     });
