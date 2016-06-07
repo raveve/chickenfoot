@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  padding: 2%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .container button {
+    text-transform: uppercase;
+    padding: 10px;
+    color: #444444;
+    font-size: 15px;
+    background: #FF7F50;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 15px; }
+    .container button:hover {
+      cursor: pointer; }
+
+header {
+  margin: 30px 0 40px 0; }
+  header h1 {
+    width: 25%;
+    font-size: 80px;
+    color: #FF7F50;
+    letter-spacing: -5px;
+    line-height: 40px; }
+
+aside,
+main {
+  display: inline-block; }
+
+aside {
+  width: 20%;
+  float: left; }
+  aside #players1-4 {
+    display: none; }
+
+main {
+  width: 75%;
+  float: right; }
+  main section {
+    display: inline-block;
+    width: 15%;
+    margin-right: 8%; }
+    main section label {
+      background: #FF7F50;
+      color: #444444;
+      font-size: 15px;
+      padding: 5.5px;
+      border-radius: 5px;
+      z-index: 2;
+      text-transform: uppercase;
+      position: relative;
+      top: 25px;
+      left: 1px; }
+    main section input {
+      border-radius: 5px;
+      background: #ADD8E6;
+      border: 2px solid white;
+      color: #444444;
+      font-size: 15px;
+      padding: 5px;
+      text-align: right;
+      margin-bottom: -5px; }
+      main section input:focus {
+        border-color: #FF7F50; }
+  main #player5,
+  main #player6,
+  main #player7,
+  main #player8 {
+    display: none; }
+
+/*# sourceMappingURL=styles_2.css.map */

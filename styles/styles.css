@@ -55,7 +55,8 @@ aside {
   width: 20%;
   margin-left: 2%;
   display: inline-block;
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  float: left; }
   aside #players1-4 {
     display: none; }
   aside h3 {
