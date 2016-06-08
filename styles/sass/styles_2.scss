@@ -50,7 +50,7 @@ main {
 aside {
 	width: 20%;
 	float: left;
-	border: 2px double $regentStBlue;
+	border: 2px double lighten($regentStBlue, 10%);
 	border-radius: 5px;
 	padding-left: 15px;
 	h3 {
@@ -79,13 +79,13 @@ main {
       z-index: 2;
       text-transform: uppercase;
       position: relative;
-      top: 25px;
-      left: 1px;
+      top: 23px;
+      left: 0;
     }
     input {
       border-radius: 5px;
       background: $regentStBlue;
-      border: 2px solid $white;
+      border: none;
       color: $tundora;
       font-size: 15px;
       padding: 5px;
